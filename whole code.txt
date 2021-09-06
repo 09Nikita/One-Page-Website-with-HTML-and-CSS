@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal - www.codingnepalweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!------<title> Website Layout | CodingLab</title>------>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+   </head>
+<body>
+  <nav>
+
+    <div class="menu">
+      <div class="logo">
+        <img src="img/ecellTransparent.png" alt="E-Cell" style="width:120px;height:120px;">
+      </div>
+      <ul>
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">ABOUT US </a></li>
+        <li><a href="#">EVENTS</a></li>
+        <li><a href="#">CONTACT US </a></li>
+    
+      </ul>
+    </div>
+  </nav>
+  <div class="img" id="element-with-background-image"></div>
+
+  <div class="center">
+    <div class="title"><p>PCCOE,<br>Welcomes you...</p></div>
+    
+    <br>
+    <p>PCCOE's Department Of Computer Engineering,<br>has started Ecell to evoke idea of<br> entrepreneurship among engineering students.</p>
+    <br>
+   
+    
+    <div class="btns">
+      <button>GET STARTED</button>
+    </div>
+    
+    <div id="bottom"><br><br>"If opportunity doesn't knock, build a door"
+      <p>~Milton Berle</p>
+    </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+::selection{
+  color: #000;
+  background: #fff;
+}
+nav{
+  position: fixed;
+  width: 100%;
+  padding: 10px 0;
+  z-index: 12;
+  padding-top: 0px;
+  
+}
+nav .menu{
+  max-width: 1250px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  padding-right: 110px;
+  font-weight: bold;
+
+}
+.logo{
+  padding-top: 70px;
+  margin-left: 0px;
+}
+.menu .logo a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+}
+.menu ul{
+  display: inline-flex;
+  
+}
+.menu ul li{
+  list-style: none;
+  margin-left: 7px;
+}
+.menu ul li:first-child{
+  margin-left: 0px;
+}
+.menu ul li a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.menu ul li a:hover{
+  background: #fff;
+  color: black;
+}
+.img{
+  background: url('img/AdobeStock_408488925.jpeg')no-repeat;
+  width: 100%;
+  height: 110vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+
+  
+}
+
+.overlay {
+  position: absolute;
+  background: rgba(0, 0, 255, 0.7);
+}
+
+.transbox {
+  width: 100%;
+  height: 110vh;
+  background-size: cover;
+  background-position: center;
+  background-color: blue;
+}
+
+.img::before{
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  
+}
+
+
+.center{
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  padding: 0 20px;
+  padding-left: 140px;
+}
+.center .title{
+  color: #fff;
+  font-size: 55px;
+  font-weight: 600;
+  padding-top: 130px;
+}
+.center .sub_title{
+  color: #fff;
+  font-size: 52px;
+  font-weight: 600;
+}
+.center .btns{
+  margin-top: 20px;
+}
+.center .btns button{
+  height: 40px;
+  width: 170px;
+  border-radius: 40px;
+  border: none;
+  margin: 0 10px;
+  border: 2px solid white;
+  font-size: 15px;
+  font-weight: 450;
+  padding: 0 10px;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease;
+}
+.center .btns button:first-child{
+  color: #fff;
+  background: none;
+}
+.btns button:first-child:hover{
+  background: white;
+  color: blue;
+}
+.center .btns button:last-child{
+  background: white;
+  color: blue;
+}
+
+.title1{
+  align-content: center;
+}
+#bottom {
+  position: absolute;
+  bottom: 30;
+  right: 0;
+  padding-right: 105px;
+  font-weight: bold;
+  color: #fff;
+  
+}
+
+#bottom p{
+  color: darkturquoise;
+  position: relative;
+  text-align: end;
+}
+
+
+
